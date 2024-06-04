@@ -1,0 +1,79 @@
+CREATE DATABASE DB_Call_Center
+
+CREATE TABLE Clientes (
+
+	Codigo int primary key,
+	Nombre varchar(50),
+	Telefono varchar(10),
+	Mail varchar(100)
+)
+
+
+CREATE TABLE Razones_Sociales (
+
+	Codigo int primary key,
+	Nombre varchar(50),
+	CUIT varchar(11),
+	Cliente int foreign key references Clientes(Codigo)
+)
+
+CREATE TABLE Puestos (
+
+	Codigo int primary key,
+	Nombre varchar(50)
+
+)
+
+CREATE TABLE Empleados (
+
+	ID_Empleado int primary key,
+	Nombre varchar(50),
+	Apellido varchar(50),
+	Mail varchar(100),
+	Usuario varchar(50),
+	Contraseña varchar(25),
+	Puesto int foreign key references Puestos(Codigo)
+)
+
+CREATE TABLE Tipo (
+
+	Codigo int primary key,
+	Nombre varchar(50)
+
+)
+
+CREATE TABLE Subtipo (
+
+	Codigo int primary key,
+	Nombre varchar(50)
+
+)
+
+CREATE TABLE Incidentes (
+
+	Numero int primary key,
+	Usuario_Registro int foreign key references Empleados(ID_Empleado),
+	Fecha_Registro date,
+	Cliente int foreign key references Clientes(Codigo),
+	Razon_Social int foreign key references Razones_Sociales(Codigo),
+	Tipo int foreign key references Tipo(Codigo),
+	Subtipo int foreign key references Subtipo(Codigo),
+	Detalle varchar(1500)
+
+)
+
+CREATE TABLE Tareas (
+
+	Numero int primary key,
+	Asunto varchar(50),
+	Tipo int foreign key references Tipo(Codigo),
+	Cliente int foreign key references Clientes(Codigo),
+	Razon_Social int foreign key references Razones_Sociales(Codigo),
+	AsignadoA int foreign key references Empleados(ID_Empleado),
+	Fecha_Inicio date,
+	Fecha_Vencimiento date,
+	Cierre date,
+	Incidente int foreign key references Incidentes(Numero)
+)
+
+
