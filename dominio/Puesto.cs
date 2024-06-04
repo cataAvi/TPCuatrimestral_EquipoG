@@ -5,7 +5,7 @@ using System.Web;
 
 namespace dominio
 {
-    public class Telefonista
+    public class Puesto
     {
     }
 }

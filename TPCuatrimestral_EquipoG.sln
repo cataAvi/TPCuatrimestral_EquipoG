@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34729.46
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPCuatrimestral_EquipoG", "TPCuatrimestral_EquipoG\TPCuatrimestral_EquipoG.csproj", "{6308F45F-6E9E-47DE-BB42-38DD013B2CBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{8F605956-4C14-4E5B-ADBC-6678A331D370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{A8DEDD3C-A4D9-48CB-BBB4-25A8C24EDFE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8F605956-4C14-4E5B-ADBC-6678A331D370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F605956-4C14-4E5B-ADBC-6678A331D370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F605956-4C14-4E5B-ADBC-6678A331D370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DEDD3C-A4D9-48CB-BBB4-25A8C24EDFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DEDD3C-A4D9-48CB-BBB4-25A8C24EDFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DEDD3C-A4D9-48CB-BBB4-25A8C24EDFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DEDD3C-A4D9-48CB-BBB4-25A8C24EDFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

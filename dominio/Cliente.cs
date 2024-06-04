@@ -7,10 +7,10 @@ namespace dominio
 {
     public class Cliente
     {
-        int codigo  { get; set; }
-        string nombre  { get; set; }
-        string telefono  { get; set; }
-        string mail  { get; set; }
-        
-    
+        int codigo { get; set; }
+        string nombre { get; set; }
+        string telefono { get; set; }
+        string mail { get; set; }
+
+    }
 }

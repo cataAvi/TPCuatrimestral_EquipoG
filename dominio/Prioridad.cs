@@ -5,7 +5,12 @@ using System.Web;
 
 namespace dominio
 {
-    public class Supervisor
+    public class Prioridad
     {
+
+
+
+
+
     }
 }
