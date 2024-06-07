@@ -98,8 +98,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("DELETE FROM Empleados WHERE ID_Empleado = @ID_Empleado");
-                datos.setearParametro("@ID_Empleado", IDEmpleado);
+                datos.setearConsulta("DELETE FROM Empleados WHERE ID_Empleado = @IDEmpleado");
+                datos.setearParametro("@IDEmpleado", IDEmpleado);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)
