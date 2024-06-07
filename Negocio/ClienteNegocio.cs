@@ -13,7 +13,7 @@ namespace Negocio
         
         
         
-        //Listar, Agregar, Eliminar.
+        //Listar, Agregar, Eliminar, Modificar
         
         public List<Cliente> listar()
         {
@@ -110,17 +110,36 @@ namespace Negocio
         }
 
 
+        public void modificar(Cliente modificar)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("UPDATE Clientes SET Codigo = @Codigo, Nombre = @Nombre, Telefono = @Telefono, Mail = @Mail WHERE Codigo = @Codigo");
+                datos.setearParametro("@Codigo", modificar.Codigo);
+                datos.setearParametro("@Nombre", modificar.Nombre);
+                datos.setearParametro("@Telefono", modificar.Telefono);
+                datos.setearParametro("@Mail", modificar.Mail);
+              
+                datos.cerrarConexion();
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
 
 
 
 
-        
 
 
-        
 
-        
+
+
 
     }
 }
