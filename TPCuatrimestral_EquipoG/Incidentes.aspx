@@ -53,11 +53,26 @@
 
     <section class="flex-container">
 
+         <div class="caja">
+            <asp:Label ID="lblNroIncidente" runat="server" Text="Número Incidente:"></asp:Label>
+            <asp:TextBox ID="txtNroIncidente" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
+        </div>
 
-        <%--GENERALES > CLIENTE > RAZON SOCIAL--%>
+         <div class="caja">
+            <asp:Label ID="lblregistradoPor" runat="server" Text="Registrado por:"></asp:Label>
+            <asp:TextBox ID="txtRegistradoPor" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
+        </div>
+
+           <div class="caja">
+            <asp:Label ID="lbFechaRegistro" runat="server" Text="Fecha de Registro:"></asp:Label>
+            <asp:TextBox ID="txtFechaRegistro" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
+        </div>
+
+
+        <%--GENERALES > CLIENTE nro > RAZON SOCIAL--%>
         <div class="caja">
-            <asp:Label ID="lblCliente" runat="server" Text="Cliente:"></asp:Label>
-            <asp:TextBox ID="txtCliente" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
+            <asp:Label ID="lblNroCliente" runat="server" Text="Numero de Cliente:"></asp:Label>
+            <asp:TextBox ID="txtNroCliente" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
         </div>
         
         <div class="caja">
@@ -76,6 +91,12 @@
         </div>
         <hr />
 
+
+        <div class="caja">
+            <asp:Label ID="lblTipo" runat="server" Text="Tipo:"></asp:Label>
+              <asp:TextBox ID="txbTipo" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
+        </div>
+        <hr />
 
 
         <%--CAJA DE TEXTO PARA LA DESCRIPCION DEL PROBLEMA--%>
@@ -102,7 +123,7 @@
 
     
 
-
+    S
     <asp:Button ID="btnCancelar" runat="server" CssClass="btn btn-primary" Text="Cancelar" />
 
 

@@ -93,7 +93,7 @@ namespace Negocio
             }
         }
 
-        public void eliminarArticulo(int codigo)
+        public void eliminarCliente(int codigo)
         {
             AccesoDatos datos = new AccesoDatos();
             try
