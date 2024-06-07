@@ -13,6 +13,8 @@
 
     </style>
 
+   
+    <%--CARROUSEL DE IMAGENES--%>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -26,5 +28,9 @@
             </div>
         </div>
     </div>
+    <%--FIN DEL CARROUSEL--%>
+
+
+
 
 </asp:Content>
