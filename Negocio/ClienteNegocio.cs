@@ -98,7 +98,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("DELETE FROM Articulos WHERE Codigo = @Codigo");
+                datos.setearConsulta("DELETE FROM Clientes WHERE Codigo = @Codigo");
                 datos.setearParametro("@Codigo", codigo);
                 datos.ejecutarAccion();
             }
