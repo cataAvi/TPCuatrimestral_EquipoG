@@ -5,7 +5,12 @@ using System.Web;
 
 namespace dominio
 {
-    public class Class2
+    public class RazonSocial
     {
+
+        public int Codigo { get; set; }
+
+
+
     }
 }

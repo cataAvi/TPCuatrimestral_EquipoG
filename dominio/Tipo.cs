@@ -7,5 +7,10 @@ namespace dominio
 {
     public class Tipo
     {
+        public int Codigo { get; set; }
+        public string Nombre { get; set; }
+
+
+
     }
 }
