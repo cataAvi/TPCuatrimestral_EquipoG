@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    internal class EmpleadoNegocio
+    public class EmpleadoNegocio
     {
 
         public List<Empleado> listar()

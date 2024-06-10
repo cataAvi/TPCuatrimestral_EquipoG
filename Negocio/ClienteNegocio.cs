@@ -8,7 +8,7 @@ using System.Data.SqlClient; //(0) Agrego esto para la conexion.
 
 namespace Negocio
 {
-    internal class ClienteNegocio
+    public class ClienteNegocio
     {
         
         

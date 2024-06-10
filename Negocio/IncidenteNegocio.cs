@@ -8,7 +8,7 @@ using dominio;
 
 namespace Negocio
 {
-    internal class IncidenteNegocio
+    public class IncidenteNegocio
     {
         public List<Incidente>listar()
         {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    internal class AccesoDatos
+   public class AccesoDatos
     {
         private SqlConnection conexion;
         private SqlCommand comando;
