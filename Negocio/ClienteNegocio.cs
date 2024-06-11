@@ -70,8 +70,8 @@ namespace Negocio
             try
             {
 
-                acceso.setearConsulta("INSERT INTO Clientes (Codigo, Nombre, Telefono, Mail) VALUES (@Codigo, @Nombre, @Telefono, @Mail)");
 
+                acceso.setearConsulta("INSERT INTO Clientes (Codigo, Nombre, Telefono, Mail) VALUES (@Codigo, @Nombre, @Telefono, @Mail)");
                 acceso.setearParametro("@Codigo", nuevo.Codigo);
                 acceso.setearParametro("@Nombre", nuevo.Nombre);
                 acceso.setearParametro("@Telefono", nuevo.Telefono);
