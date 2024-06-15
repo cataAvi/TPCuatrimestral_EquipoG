@@ -76,4 +76,27 @@ CREATE TABLE Tareas (
 	Incidente int foreign key references Incidentes(Numero)
 )
 
+-----------------------------
+
+insert into TiposCuentas (Nombre, CapacidadEnMB) values ('Administrador', 50)
+insert into TiposCuentas (Nombre, CapacidadEnMB) values ('Supervisor', 50)
+insert into TiposCuentas (Nombre, CapacidadEnMB) values ('Telefonista', 50)
+
+insert into Usuarios (IDTipoCuenta, NombreUsuario) values ( 6, 'INFRAESTRUCTURA')
+insert into Usuarios (IDTipoCuenta, NombreUsuario) values ( 7, 'JEFE')
+insert into Usuarios (IDTipoCuenta, NombreUsuario) values ( 8, 'EMPLEADO')
+
+insert into Clientes (Codigo,Nombre,Telefono,Mail) values (1010, 'UTN S.A.', '11222333', 'direcciones@utn.com.ar')
+
+insert into Razones_Sociales (Codigo, Nombre, CUIT, Cliente) values (1111, 'FRGP', '30112223335', 1010)
+insert into Razones_Sociales (Codigo, Nombre, CUIT, Cliente) values (2222, 'BA', '30152223335', 1010)
+
+
+alter table Subtipo
+ADD [Tipo] int foreign key references Tipo(Codigo)
+
+
+insert into Tipo (Codigo, Nombre) values (1, 'Tareas varias')
+insert into Subtipo (Codigo, Nombre, Tipo) values (11, 'Instalación', 1)
+insert into Subtipo (Codigo, Nombre, Tipo) values (12, 'Actualización', 1)
 
