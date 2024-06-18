@@ -12,106 +12,66 @@ namespace Negocio
 {
     public class TareasNegocio
     {
-      
-      public List<Tarea> listar()
-      {
-
-            List<Tarea> lista = new List<Tarea>();  
-            AccesoDatos datos = new AccesoDatos();  
+        public List<Tarea> Listar()
+        {
+            List<Tarea> lista = new List<Tarea>();
+            AccesoDatos datos = new AccesoDatos();
 
             try
             {
                 datos.setearConsulta("SELECT * FROM Tareas");
                 datos.ejecutarLectura();
-                
-                
+
                 while (datos.Lector.Read())
                 {
-                    int nroActual = (int)datos.Lector["Numero"];
-                    Tarea aux = lista.FirstOrDefault(a => a.Numero == nroActual);
-
-                    if (aux == null)
+                    Tarea aux = new Tarea
                     {
-                        aux = new Tarea
+                        Numero = (int)datos.Lector["Numero"],
+                        Asunto = (string)datos.Lector["Asunto"],
+                        FechaInicio = (DateTime)datos.Lector["Fecha_Inicio"],
+                        FechaVencimiento = (DateTime)datos.Lector["Fecha_Vencimiento"],
+                        Cierre = datos.Lector["Cierre"] != DBNull.Value ? (DateTime?)datos.Lector["Cierre"] : null,
+                        Cliente = new Cliente
                         {
+                            Codigo = (int)datos.Lector["Cliente"],
+                            Nombre = datos.Lector["Nombre_Cliente"].ToString() // Suponiendo que este campo está en la consulta
+                        },
+                        AsignadoA = new Empleado
+                        {
+                            IDEmpleado = (int)datos.Lector["AsignadoA"],
+                            Nombre = datos.Lector["Nombre_Asignado"].ToString() // Suponiendo que este campo está en la consulta
+                        },
+                        Incidente = new Incidente
+                        {
+                            Numero = (int)datos.Lector["Incidente"]
+                        },
+                        RazonSocial = new RazonSocial
+                        {
+                            Codigo = (int)datos.Lector["Razon_Social"],
+                            Nombre = datos.Lector["Nombre_Razon_Social"].ToString() // Suponiendo que este campo está en la consulta
+                        },
+                        Tipo = new Tipo
+                        {
+                            Codigo = (int)datos.Lector["Tipo"],
+                            Nombre = datos.Lector["Nombre_Tipo"].ToString() // Suponiendo que este campo está en la consulta
+                        }
+                    };
 
-                            Numero = (int)datos.Lector["Numero"],
-                            Asignacion = (int)datos.Lector["Asignacion"],
-                            Asunto = (string)datos.Lector["Asunto"],
-                            Cierre = (DateTime)datos.Lector["Cierre"],
-                            FechaInicio = (DateTime)datos.Lector["FechaInicio"],
-                            FechaVencimiento = (DateTime)datos.Lector["FechaVencimiento"],
-                            
-                            
-                            Cliente = new Cliente
-                            {
-                                Codigo = (int)datos.Lector["Codigo"],
-                                Nombre = (string)datos.Lector["Nombre"],
-                                Telefono = (string)datos.Lector["Telefono"],
-                                Mail = (string)datos.Lector["Mail"]
-                            },
-
-
-                            Incidente = new Incidente
-                            {
-                                Numero = (int)datos.Lector["Codigo"],
-                                Cliente = (int)datos.Lector["Cliente"],
-                                Detalle = (string)datos.Lector["Telefono"],
-                                FechaRegistro = (DateTime)datos.Lector["Fecha_Registro"],
-                                RazonSocial = (int)datos.Lector["Razon_Social"],
-                                SubTipo = (int)datos.Lector["SubTipo"],
-                                Tipo = (int)datos.Lector["Tipo"],
-                                UsuarioRegistro = (int)datos.Lector["Usuario_Registro"]
-                            }
-                           /* RazonSocial = new RazonSocial
-                            {
-                               
-                            },*/
-                           /* Tipo = new Tipo
-                            {
-                                ID = (int)datos.Lector["TipoID"],
-                                Descripcion = (string)datos.Lector["TipoDescripcion"]
-                            }*/
-
-                        };
-
-
-                        lista.Add(aux);
-                    }
-
-
+                    lista.Add(aux);
                 }
 
-
-
-                 return lista;
-
+                return lista;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
-            finally {
-
+            finally
+            {
                 datos.cerrarConexion();
-            
             }
-
-
-
-
-
-
-       }
-    
-    
-    
-    
-    
-    
+        }
     }
-
 
 
 

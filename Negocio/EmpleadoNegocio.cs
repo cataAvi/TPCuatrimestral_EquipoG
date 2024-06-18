@@ -38,7 +38,7 @@ namespace Negocio
                             Mail = (string)datos.Lector["Mail"],
                             Usuario = (string)datos.Lector["Usuario"],
                             Contrasena = (string)datos.Lector["Contraseña"],
-                            Puesto = (int)datos.Lector["Puesto"]
+                            IDPuesto = (int)datos.Lector["Puesto"]
 
 
                         };
@@ -76,7 +76,7 @@ namespace Negocio
                 acceso.setearParametro("@Usuario", nuevo.Usuario);
                 acceso.setearParametro("@Mail", nuevo.Mail);
                 acceso.setearParametro("@Contraseña", nuevo.Contrasena);
-                acceso.setearParametro("@Puesto", nuevo.Puesto);
+                acceso.setearParametro("@Puesto", nuevo.IDPuesto);
 
                 acceso.ejecutarAccion();
 
@@ -123,7 +123,7 @@ namespace Negocio
                 datos.setearParametro("@Usuario", modificar.Usuario);
                 datos.setearParametro("@Mail", modificar.Mail);
                 datos.setearParametro("@Contraseña", modificar.Contrasena);
-                datos.setearParametro("@Puesto", modificar.Puesto);
+                datos.setearParametro("@Puesto", modificar.IDPuesto);
                 datos.cerrarConexion();
                 datos.ejecutarAccion();
             }

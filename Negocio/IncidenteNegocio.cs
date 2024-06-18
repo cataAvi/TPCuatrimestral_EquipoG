@@ -33,13 +33,13 @@ namespace Negocio
                         {
 
                             Numero = (int)datos.Lector["Codigo"],
-                            Cliente = (int)datos.Lector["Cliente"],
+                            IDCliente = (int)datos.Lector["Cliente"],
                             Detalle = (string)datos.Lector["Telefono"],
                             FechaRegistro = (DateTime)datos.Lector["Fecha_Registro"],
-                            RazonSocial = (int)datos.Lector["Razon_Social"],
-                            SubTipo = (int)datos.Lector["SubTipo"],
-                            Tipo = (int)datos.Lector["Tipo"],
-                            UsuarioRegistro = (int)datos.Lector["Usuario_Registro"]
+                            IDRazonSocial = (int)datos.Lector["Razon_Social"],
+                            IDSubTipo = (int)datos.Lector["SubTipo"],
+                            IDTipo = (int)datos.Lector["Tipo"],
+                            IDUsuarioRegistro = (int)datos.Lector["Usuario_Registro"]
 
 
                         };

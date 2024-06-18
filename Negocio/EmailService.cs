@@ -16,7 +16,7 @@ namespace Negocio
         public EmailService()
         {
             server = new SmtpClient(); //declarar la instacia del servidor cuando la crea y lo configuro
-            server.Credentials = new NetworkCredential("c8c678d6eab9de", "********f726"); // le doy las credenciales.
+            server.Credentials = new NetworkCredential("c8c678d6eab9de", "3d32cf4cd4f726"); // le doy las credenciales.
             server.EnableSsl = true;
             server.Port = 2525;
             server.Host = "smpt.mailtrap.io";

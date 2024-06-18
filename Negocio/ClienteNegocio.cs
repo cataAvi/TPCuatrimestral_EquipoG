@@ -64,7 +64,7 @@ namespace Negocio
             }
         }
 
-        public void agregar(Cliente nuevo)
+        public void altaCliente(Cliente nuevo)
         {
             AccesoDatos acceso = new AccesoDatos();
             try
@@ -110,7 +110,7 @@ namespace Negocio
         }
 
 
-        public void modificar(Cliente modificar)
+        public void modificarCliente(Cliente modificar)
         {
             AccesoDatos datos = new AccesoDatos();
 

@@ -7,8 +7,6 @@ namespace dominio
 {
     public class Cliente
     {
-         
-        
         //Atributos de mi Cliente
          public int Codigo{ get; set; }
          public string Nombre { get; set; }
@@ -16,6 +14,8 @@ namespace dominio
          public string Mail { get; set; }
 
     }
+         
+        
 
 
 

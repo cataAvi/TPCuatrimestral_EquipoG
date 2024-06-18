@@ -8,13 +8,13 @@ namespace dominio
     public class Incidente
     {
         public int Numero { get; set; }
-        public int Cliente { get; set; }
+        public int IDCliente { get; set; }
         public string Detalle { get; set; }
         public DateTime FechaRegistro  { get; set;} 
-        public int RazonSocial { get; set;}
-        public int SubTipo { get; set;} 
-        public int Tipo { get; set;} 
-        public int UsuarioRegistro { get; set;} 
+        public int IDRazonSocial { get; set;}
+        public int IDSubTipo { get; set;} 
+        public int IDTipo { get; set;} 
+        public int IDUsuarioRegistro { get; set;} 
 
 
 
