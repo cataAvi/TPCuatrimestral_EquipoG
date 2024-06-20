@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cliente.aspx.cs" Inherits="TPCuatrimestral_EquipoG.Cliente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AltaCliente.aspx.cs" Inherits="TPCuatrimestral_EquipoG.Cliente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -84,7 +84,7 @@
     <br />
     <hr />
 
-    <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" Text="Grabar" />
+    <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" Onclick = "btnGrabar_Click" Text="Grabar" />
     <asp:Button ID="btnCancelar" runat="server" CssClass="btn btn-primary" Text="Cancelar" />
 
 

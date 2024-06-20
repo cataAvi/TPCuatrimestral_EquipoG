@@ -1,0 +1,7 @@
+create procedure storedAltaCliente
+@Codigo int,
+@Nombre varchar(50),
+@Telefono varchar(10),
+@Mail varchar(100)
+as
+insert into Clientes values (@Codigo, @Nombre, 

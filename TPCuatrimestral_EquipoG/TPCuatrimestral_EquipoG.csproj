@@ -103,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cargos.aspx" />
-    <Content Include="Cliente.aspx" />
+    <Content Include="AltaCliente.aspx" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -179,12 +179,12 @@
     <Compile Include="Cargos.aspx.designer.cs">
       <DependentUpon>Cargos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.aspx.cs">
-      <DependentUpon>Cliente.aspx</DependentUpon>
+    <Compile Include="AltaCliente.aspx.cs">
+      <DependentUpon>AltaCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cliente.aspx.designer.cs">
-      <DependentUpon>Cliente.aspx</DependentUpon>
+    <Compile Include="AltaCliente.aspx.designer.cs">
+      <DependentUpon>AltaCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="InicioSesion.aspx.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
