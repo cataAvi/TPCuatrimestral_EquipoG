@@ -29,7 +29,7 @@ namespace TPCuatrimestral_EquipoG
                 nuevo.Mail = txbEmail.Text;
 
                 negocio.altaCliente(nuevo);
-                Response.Redirect("Default.aspx", false);
+                Response.Redirect("Default.aspx", false); //Cambiar a un form que diga que el registro se agregó correctamente
             }
             catch(Exception ex)
             {
