@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-﻿<%@ Page Title="Inicio Sesion" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="TPCuatrimestral_EquipoG.InicioSesion" %>
-=======
-﻿<%@ Page Title="InicioSesion" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="TPCuatrimestral_EquipoG.InicioSesion" %>
->>>>>>> 14b7c5aa77f38a2aad24d62ee3ff9eec39855e77
+<%@ Page Title="Inicio Sesion" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="TPCuatrimestral_EquipoG.InicioSesion" %>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
