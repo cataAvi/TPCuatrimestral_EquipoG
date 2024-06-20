@@ -62,7 +62,7 @@
                             <!-- Opciones del menú desplegable -->
                             <ul class="dropdown-menu">
                                 <!-- Opción para acceder a la página de Clientes -->
-                                <li><a class="dropdown-item" href="Tareas.aspx">Clientes</a></li>
+                                <li><a class="dropdown-item" href="Cliente.aspx">Clientes</a></li>
                                 <!-- Opción para acceder a la página de Razones Sociales -->
                                 <li><a class="dropdown-item" href="Incidentes.aspx">Razones Sociales</a></li>
                                 <!-- Opción para acceder a la página de Tipo -->
