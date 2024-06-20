@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,12 +45,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
+    <Compile Include="CargosNegocio.cs" />
     <Compile Include="ClienteNegocio.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="EmpleadoNegocio.cs" />
     <Compile Include="IncidenteNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RazonSocialNegocio.cs" />
+    <Compile Include="SubTipoNegocio.cs" />
     <Compile Include="TareasNegocio.cs" />
+    <Compile Include="TipoNegocio.cs" />
+    <Compile Include="UsuarioNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\dominio\dominio.csproj">

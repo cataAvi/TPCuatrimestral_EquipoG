@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="TPCuatrimestral_EquipoG.About" %>
+﻿<%@ Page Title="Inicio Sesion" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="TPCuatrimestral_EquipoG.InicioSesion" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -48,12 +48,17 @@
             <asp:TextBox ID="txbContra" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
         </div>
         <div class="caja">
-            <asp:Button ID="btnIngresar" runat="server" CssClass="btn btn-primary" Text="Ingresar" />
+            <asp:Button ID="btnIngresar" OnClick="btnIngresar_Click" runat="server" CssClass="btn btn-primary" Text="Ingresar" />
         </div>
+
+
     </section>
 
 
     <br />
 
+    <a href="Default.aspx">Inicio</a>
+
+    <br />
 
 </asp:Content>
