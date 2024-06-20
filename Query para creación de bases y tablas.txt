@@ -17,22 +17,22 @@ CREATE TABLE Razones_Sociales (
 	Cliente int foreign key references Clientes(Codigo)
 )
 
-CREATE TABLE Puestos (
+CREATE TABLE Cargos (
 
 	Codigo int primary key,
 	Nombre varchar(50)
 
 )
 
-CREATE TABLE Empleados (
+CREATE TABLE Usuarios (
 
-	ID_Empleado int primary key,
+	ID_Usuario int primary key,
 	Nombre varchar(50),
 	Apellido varchar(50),
 	Mail varchar(100),
-	Usuario varchar(50),
-	Contraseña varchar(25),
-	Puesto int foreign key references Puestos(Codigo)
+	Nombre_Usuario varchar(50),
+	Contrasenia_Usuario varchar(25),
+	Cargo int foreign key references Cargos(Codigo)
 )
 
 CREATE TABLE Tipo (
@@ -49,10 +49,13 @@ CREATE TABLE Subtipo (
 
 )
 
+alter table Subtipo
+ADD [Tipo] int foreign key references Tipo(Codigo)
+
 CREATE TABLE Incidentes (
 
 	Numero int primary key,
-	Usuario_Registro int foreign key references Empleados(ID_Empleado),
+	Usuario_Registro int foreign key references Usuarios(ID_Usuario),
 	Fecha_Registro date,
 	Cliente int foreign key references Clientes(Codigo),
 	Razon_Social int foreign key references Razones_Sociales(Codigo),
@@ -62,29 +65,7 @@ CREATE TABLE Incidentes (
 
 )
 
-CREATE TABLE Tareas (
-
-	Numero int primary key,
-	Asunto varchar(50),
-	Tipo int foreign key references Tipo(Codigo),
-	Cliente int foreign key references Clientes(Codigo),
-	Razon_Social int foreign key references Razones_Sociales(Codigo),
-	AsignadoA int foreign key references Empleados(ID_Empleado),
-	Fecha_Inicio date,
-	Fecha_Vencimiento date,
-	Cierre date,
-	Incidente int foreign key references Incidentes(Numero)
-)
-
------------------------------
-
-insert into TiposCuentas (Nombre, CapacidadEnMB) values ('Administrador', 50)
-insert into TiposCuentas (Nombre, CapacidadEnMB) values ('Supervisor', 50)
-insert into TiposCuentas (Nombre, CapacidadEnMB) values ('Telefonista', 50)
-
-insert into Usuarios (IDTipoCuenta, NombreUsuario) values ( 6, 'INFRAESTRUCTURA')
-insert into Usuarios (IDTipoCuenta, NombreUsuario) values ( 7, 'JEFE')
-insert into Usuarios (IDTipoCuenta, NombreUsuario) values ( 8, 'EMPLEADO')
+//-------------------------------------------------------
 
 insert into Clientes (Codigo,Nombre,Telefono,Mail) values (1010, 'UTN S.A.', '11222333', 'direcciones@utn.com.ar')
 
@@ -92,11 +73,19 @@ insert into Razones_Sociales (Codigo, Nombre, CUIT, Cliente) values (1111, 'FRGP
 insert into Razones_Sociales (Codigo, Nombre, CUIT, Cliente) values (2222, 'BA', '30152223335', 1010)
 
 
-alter table Subtipo
-ADD [Tipo] int foreign key references Tipo(Codigo)
-
-
 insert into Tipo (Codigo, Nombre) values (1, 'Tareas varias')
+
 insert into Subtipo (Codigo, Nombre, Tipo) values (11, 'Instalación', 1)
 insert into Subtipo (Codigo, Nombre, Tipo) values (12, 'Actualización', 1)
+
+select * from Usuarios
+select * from Cargos
+
+insert into Cargos (Nombre, Codigo) values ('Administrador', 1)
+insert into Cargos (Nombre, Codigo)values ('Supervisor', 2)
+insert into Cargos (Nombre, Codigo) values ('Telefonista', 3)
+
+insert into Usuarios (ID_Usuario, Nombre, Apellido, Mail, Nombre_Usuario, Contrasenia_Usuario, Cargo) values (1111, 'Catalina', 'Avila', 'cavila@mail.com', 'CAVILA', '1234', 1)
+insert into Usuarios (ID_Usuario, Nombre, Apellido, Mail, Nombre_Usuario, Contrasenia_Usuario, Cargo) values (2222, 'Franco', 'Aguado', 'faguado@mail.com', 'FAGUADO', '4567', 2)
+insert into Usuarios (ID_Usuario, Nombre, Apellido, Mail, Nombre_Usuario, Contrasenia_Usuario, Cargo) values (3333, 'Maximiliano', 'Fernandez', 'mfernandez@mail.com', 'MFERNANDEZ', '0000', 3)
 

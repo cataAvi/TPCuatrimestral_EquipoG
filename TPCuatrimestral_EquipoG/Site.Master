@@ -28,7 +28,7 @@
                 <!-- Menú de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       
+
                         <!-- Elemento de menú desplegable "Inicio" -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inicio</a>
@@ -42,7 +42,7 @@
                                 <li><a class="dropdown-item" href="#">Salir</a></li>
                             </ul>
                         </li>
-                        
+
                         <!-- Elemento de menú desplegable "SAL" -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SAL</a>
@@ -55,15 +55,45 @@
                             </ul>
                         </li>
 
-                        
-                          <!-- Elemento de menú desplegable "Envio De Email" -->
+
+                        <!-- Elemento de menú desplegable "Altas" -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Altas</a>
+                            <!-- Opciones del menú desplegable -->
+                            <ul class="dropdown-menu">
+                                <!-- Opción para acceder a la página de Clientes -->
+                                <li><a class="dropdown-item" href="Tareas.aspx">Clientes</a></li>
+                                <!-- Opción para acceder a la página de Razones Sociales -->
+                                <li><a class="dropdown-item" href="Incidentes.aspx">Razones Sociales</a></li>
+                                <!-- Opción para acceder a la página de Tipo -->
+                                <li><a class="dropdown-item" href="Incidentes.aspx">Tipo</a></li>
+                                <!-- Opción para acceder a la página de Subtipo -->
+                                <li><a class="dropdown-item" href="Incidentes.aspx">Subtipo</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Elemento de menú desplegable "Seguridad" -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Seguridad</a>
+                            <!-- Opciones del menú desplegable -->
+                            <ul class="dropdown-menu">
+                                <!-- Opción para acceder a la página de Empleados -->
+                                <li><a class="dropdown-item" href="Tareas.aspx">Empleados</a></li>
+                                <!-- Opción para acceder a la página de Razones Puestos -->
+                                <li><a class="dropdown-item" href="Incidentes.aspx">Puestos</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Elemento de menú desplegable "Envio De Email" -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Email</a>
                             <!-- Opciones del menú desplegable -->
                             <ul class="dropdown-menu">
                                 <!-- Opción para acceder a la página de tareas -->
                                 <li><a class="dropdown-item" href="EnviarEmail.aspx">Enviar un Correo</a></li>
-                                
+
                             </ul>
                         </li>
 
