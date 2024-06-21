@@ -14,6 +14,9 @@ namespace TPCuatrimestral_EquipoG
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+
+
         }
 
         protected void btnGrabar_Click(object sender, EventArgs e)

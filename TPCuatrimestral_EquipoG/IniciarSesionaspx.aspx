@@ -1,9 +1,7 @@
-<%@ Page Title="Inicio Sesion" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="TPCuatrimestral_EquipoG.InicioSesion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="IniciarSesionaspx.aspx.cs" Inherits="TPCuatrimestral_EquipoG.IniciarSesionaspx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <style>
+     <style>
         .caja {
             height: 50px;
             text-align: right;
@@ -61,5 +59,15 @@
     <a href="Default.aspx">Inicio</a>
 
     <br />
+
+
+
+
+
+
+
+
+
+
 
 </asp:Content>

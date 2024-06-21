@@ -7,15 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace TPCuatrimestral_EquipoG
 {
-    public partial class InicioSesion : System.Web.UI.Page
+    public partial class IniciarSesionaspx : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
-
-
-
 
         }
 
@@ -23,9 +18,11 @@ namespace TPCuatrimestral_EquipoG
         {
 
         }
+    
+    
+    
+    
     }
-
-
 
 
 }

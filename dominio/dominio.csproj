@@ -61,12 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cargos.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Incidente.cs" />
     <Compile Include="Prioridad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Puesto.cs" />
     <Compile Include="RazonSocial.cs" />
     <Compile Include="Subtipo.cs" />
     <Compile Include="Tarea.cs" />
