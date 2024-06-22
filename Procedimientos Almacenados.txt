@@ -4,4 +4,14 @@ create procedure storedAltaCliente
 @Telefono varchar(10),
 @Mail varchar(100)
 as
-insert into Clientes values (@Codigo, @Nombre, 
+insert into Clientes values (@Codigo, @Nombre,
+
+
+create procedure storedAltaCargo
+@Codigo int,
+@Nombre varchar(50)
+AS
+BEGIN
+INSERT INTO Cargos values (@Codigo,@Nombre)
+END;
+GO

@@ -26,7 +26,7 @@ namespace TPCuatrimestral_EquipoG
                 nuevo.Codigo = int.Parse(txbCodigo.Text);
                 nuevo.Nombre = txbCodigo.Text;
 
-                negocio.altaCargo(nuevo);
+                negocio.altaCargoSP(nuevo);
                 Response.Redirect("Default.aspx", false); // Cambiar a un Form que me diga que se cargo correctamente...
 
 

@@ -60,7 +60,7 @@ namespace Negocio
             }
         }
 
-        public void altaCargo(Cargos nuevo)
+        public void altaCargoSP(Cargos nuevo)
         {
             AccesoDatos acceso = new AccesoDatos();
             try
