@@ -15,6 +15,15 @@ namespace TPCuatrimestral_EquipoG
     {
 
         /// <summary>
+        /// btnAnterior control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAnterior;
+
+        /// <summary>
         /// btnBuscar control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace TPCuatrimestral_EquipoG
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnBuscar;
+
+        /// <summary>
+        /// btnSiguiente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSiguiente;
 
         /// <summary>
         /// lbCodigo control.

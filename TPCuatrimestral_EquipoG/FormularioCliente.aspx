@@ -41,9 +41,9 @@
 
 
     <%--BOTONES ANTERIOR/BUSCAR/SIGUIENTE--%>
-    <button type="button" class="btn btn-secondary btn-sm" id="btnAnterior">Anterior</button>
+    <asp:Button ID="btnAnterior" cssclass="btn btn-secondary btn-sm" OnClick="btnAnterior_Click" runat="server" Text="Anterior" />
     <asp:Button ID="btnBuscar" cssclass="btn btn-primary btn-sm" OnClick="btnBuscar_Click" runat="server" Text="Buscar" />
-    <button type="button" class="btn btn-secondary btn-sm" id="btnSiguiente">Siguiente</button>
+    <asp:Button ID="btnSiguiente" cssclass="btn btn-secondary btn-sm" OnClick="btnSiguiente_Click" runat="server" Text="Siguiente" />
 
 <%--    <button type="button" class="btn btn-secondary btn-sm"  id="btnEditar">✏️</button>
     <button type="button" class="btn btn-secondary btn-sm" href="ListadoCliente.aspx" id="btnAlta">➕</button>

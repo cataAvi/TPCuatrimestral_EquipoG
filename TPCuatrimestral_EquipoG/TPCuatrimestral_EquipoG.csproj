@@ -129,6 +129,7 @@
     <Content Include="Incidentes.aspx" />
     <Content Include="IniciarSesionaspx.aspx" />
     <Content Include="ListadoCliente.aspx" />
+    <Content Include="Mensaje.aspx" />
     <Content Include="RazonSocial.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -240,6 +241,13 @@
     </Compile>
     <Compile Include="ListadoCliente.aspx.designer.cs">
       <DependentUpon>ListadoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje.aspx.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje.aspx.designer.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RazonSocial.aspx.cs">

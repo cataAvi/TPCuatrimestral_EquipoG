@@ -35,7 +35,7 @@
                             <!-- Opciones del menú desplegable -->
                             <ul class="dropdown-menu">
                                 <!-- Opción de cerrar sesión -->
-                                <li><a class="dropdown-item" href="InicioSesion.aspx">Iniciar sesión</a></li>
+                                <li><a class="dropdown-item" href="IniciarSesionaspx.aspx">Iniciar sesión</a></li>
                                 <!-- Opción de cambiar contraseña -->
                                 <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
                                 <!-- Opción de salir -->
