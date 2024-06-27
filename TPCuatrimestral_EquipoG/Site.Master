@@ -62,7 +62,7 @@
                             <!-- Opciones del menú desplegable -->
                             <ul class="dropdown-menu">
                                 <!-- Opción para acceder a la página de Clientes -->
-                                <li><a class="dropdown-item" href="Cliente.aspx">Clientes</a></li>
+                                <li><a class="dropdown-item" href="ListadoCliente.aspx">Clientes</a></li>
 
                                 <%--REDIRIGIRME A LA PAGINA DE ALTACARGO.ASPX--%>
                                 <li><a class="dropdown-item" href="AltaCargo.aspx">Nuevo Cargo</a></li>

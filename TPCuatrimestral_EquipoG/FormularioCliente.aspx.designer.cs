@@ -11,8 +11,17 @@ namespace TPCuatrimestral_EquipoG
 {
 
 
-    public partial class Cliente
+    public partial class FormularioCliente
     {
+
+        /// <summary>
+        /// btnBuscar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
 
         /// <summary>
         /// lbCodigo control.
@@ -96,12 +105,30 @@ namespace TPCuatrimestral_EquipoG
         protected global::System.Web.UI.WebControls.Button btnAceptar;
 
         /// <summary>
-        /// btnCancelar control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// chbConfirmarEliminacion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chbConfirmarEliminacion;
+
+        /// <summary>
+        /// btnConfirmarEliminacion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmarEliminacion;
     }
 }

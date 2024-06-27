@@ -4,14 +4,22 @@ create procedure storedAltaCliente
 @Telefono varchar(10),
 @Mail varchar(100)
 as
-insert into Clientes values (@Codigo, @Nombre,
+insert into Clientes values (@Codigo, @Nombre,@Telefono,@Mail)
 
 
 create procedure storedAltaCargo
 @Codigo int,
 @Nombre varchar(50)
-AS
-BEGIN
 INSERT INTO Cargos values (@Codigo,@Nombre)
-END;
-GO
+
+
+create procedure storedListarClientes as
+SELECT C.Codigo, C.Nombre, C.Telefono, C.Mail FROM Clientes AS C
+
+create procedure storedModificarCliente
+@Codigo int,
+@Nombre varchar(50),
+@Telefono varchar(50),
+@Mail varchar(100)
+as
+UPDATE Clientes SET Codigo = @Codigo, Nombre = @Nombre, Telefono = @Telefono, Mail = @Mail WHERE Codigo = @Codigo

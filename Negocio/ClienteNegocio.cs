@@ -22,10 +22,11 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("SELECT C.Codigo, C.Nombre, C.Telefono, C.Mail FROM Clientes AS C");
+                //datos.setearConsulta("SELECT C.Codigo, C.Nombre, C.Telefono, C.Mail FROM Clientes AS C");
+                //datos.ejecutarLectura();
+
+                datos.setearProcedimiento("storedListarClientes");
                 datos.ejecutarLectura();
-
-
 
                 while (datos.Lector.Read())
                 {
@@ -117,7 +118,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("UPDATE Clientes SET Codigo = @Codigo, Nombre = @Nombre, Telefono = @Telefono, Mail = @Mail WHERE Codigo = @Codigo");
+                datos.setearProcedimiento("storedModificarCliente");
                 datos.setearParametro("@Codigo", modificar.Codigo);
                 datos.setearParametro("@Nombre", modificar.Nombre);
                 datos.setearParametro("@Telefono", modificar.Telefono);

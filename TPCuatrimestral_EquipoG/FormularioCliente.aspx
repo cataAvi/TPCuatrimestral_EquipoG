@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AltaCliente.aspx.cs" Inherits="TPCuatrimestral_EquipoG.Cliente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormularioCliente.aspx.cs" Inherits="TPCuatrimestral_EquipoG.FormularioCliente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -42,12 +42,12 @@
 
     <%--BOTONES ANTERIOR/BUSCAR/SIGUIENTE--%>
     <button type="button" class="btn btn-secondary btn-sm" id="btnAnterior">Anterior</button>
-    <button type="button" class="btn btn-primary btn-sm" id="btnBuscar">Buscar</button>
+    <asp:Button ID="btnBuscar" cssclass="btn btn-primary btn-sm" OnClick="btnBuscar_Click" runat="server" Text="Buscar" />
     <button type="button" class="btn btn-secondary btn-sm" id="btnSiguiente">Siguiente</button>
 
-    <button type="button" class="btn btn-secondary btn-sm" id="btnAlta">✏️</button>
-    <button type="button" class="btn btn-secondary btn-sm" id="btnEditar">➕</button>
-    <button type="button" class="btn btn-secondary btn-sm" id="btnEliminar">❌</button>
+<%--    <button type="button" class="btn btn-secondary btn-sm"  id="btnEditar">✏️</button>
+    <button type="button" class="btn btn-secondary btn-sm" href="ListadoCliente.aspx" id="btnAlta">➕</button>
+    <button type="button" class="btn btn-secondary btn-sm" id="btnEliminar">❌</button>--%>
 
 
     <br />
@@ -71,7 +71,7 @@
         </div>
 
 
-       
+
         <div class="caja">
             <asp:Label ID="lbEmail" runat="server" Text="Email:"></asp:Label>
             <asp:TextBox ID="txbEmail" runat="server" Width="350px" Height="30px" BackColor="LightBlue"></asp:TextBox>
@@ -84,8 +84,20 @@
     <br />
     <hr />
 
-    <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" Onclick = "btnGrabar_Click" Text="Grabar" />
-    <asp:Button ID="btnCancelar" runat="server" CssClass="btn btn-primary" Text="Cancelar" />
+    <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" OnClick="btnGrabar_Click" Text="Editar" />
+
+            <asp:Button ID="Button1" runat="server" OnClick="btnBorrar_Click" CssClass="btn btn-danger" Text="Eliminar" />
+
+            <br />
+            <hr />
+
+            <%if (ConfirmaEliminacion)
+                { %>
+            <asp:CheckBox Text="Confirmar eliminación" ID="chbConfirmarEliminacion" runat="server" />
+            <asp:Button ID="btnConfirmarEliminacion" OnClick="btnConfirmaEliminacion_Click" runat="server" CssClass="btn btn-outline-danger" Text="Eliminar" />
+            <% } %>
+
+
 
 
 </asp:Content>
