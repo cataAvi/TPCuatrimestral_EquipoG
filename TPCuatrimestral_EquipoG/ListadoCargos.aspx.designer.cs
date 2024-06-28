@@ -11,16 +11,25 @@ namespace TPCuatrimestral_EquipoG
 {
 
 
-    public partial class SiteMaster
+    public partial class ListadoCargos
     {
 
         /// <summary>
-        /// Control MainContent.
+        /// Control dgvCargos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.GridView dgvCargos;
+
+        /// <summary>
+        /// Control btnAgregarCargo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAgregarCargo;
     }
 }

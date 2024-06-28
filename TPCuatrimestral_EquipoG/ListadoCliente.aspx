@@ -13,6 +13,6 @@
     <hr />
     <br />
 
-    <asp:Button ID="btnAgregarCliente" onclick="btnAgregarCliente_Click" runat="server" CssClass="btn btn-primary" Text="Crear Cliente" />
+    <asp:Button ID="btnAgregarCliente" onclick="btnAgregarCliente_Click" runat="server" CssClass="btn btn-primary" Text="Nuevo Cliente" />
 
 </asp:Content>

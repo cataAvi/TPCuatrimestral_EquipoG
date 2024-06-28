@@ -11,7 +11,7 @@ namespace TPCuatrimestral_EquipoG
 {
 
 
-    public partial class AltaCargo
+    public partial class FormularioCargos
     {
 
         /// <summary>

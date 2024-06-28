@@ -1,20 +1,24 @@
-create procedure storedAltaCliente
-@Codigo int,
-@Nombre varchar(50),
-@Telefono varchar(10),
-@Mail varchar(100)
-as
-insert into Clientes values (@Codigo, @Nombre,@Telefono,@Mail)
+DROP PROCEDURE IF EXISTS storedAltaCliente; //Si existe borrarla y crearla de neuvo.
+GO
+-------------------------------------------------------------------------------------
+Sentencia de Sql para poder listar todos los procedimientos almacenados activos.
+SELECT name, create_date, modify_date
+FROM sys.procedures
+ORDER BY name
+----------------------------------------------------------------------------------------
+< CLIENTE >
 
-
-create procedure storedAltaCargo
-@Codigo int,
-@Nombre varchar(50)
-INSERT INTO Cargos values (@Codigo,@Nombre)
-
-
-create procedure storedListarClientes as
-SELECT C.Codigo, C.Nombre, C.Telefono, C.Mail FROM Clientes AS C
+CREATE PROCEDURE storedAltaCliente
+    @Codigo INT,
+    @Nombre VARCHAR(50),
+    @Telefono VARCHAR(10),
+    @Mail VARCHAR(100)
+AS
+BEGIN
+    INSERT INTO Clientes (Codigo, Nombre, Telefono, Mail)
+    VALUES (@Codigo, @Nombre, @Telefono, @Mail);
+END;
+GO
 
 create procedure storedModificarCliente
 @Codigo int,
@@ -23,3 +27,23 @@ create procedure storedModificarCliente
 @Mail varchar(100)
 as
 UPDATE Clientes SET Codigo = @Codigo, Nombre = @Nombre, Telefono = @Telefono, Mail = @Mail WHERE Codigo = @Codigo
+
+create procedure storedListarClientes as
+SELECT C.Codigo, C.Nombre, C.Telefono, C.Mail FROM Clientes AS C
+-------------------------------------------------------------------------------------------------------
+
+CARGOS
+
+create procedure storedAltaCargo
+@Codigo int,
+@Nombre varchar(50)
+INSERT INTO Cargos values (@Codigo,@Nombre)
+
+create procedure storedModificarCargo
+@Codigo int,
+@Nombre varchar(50)
+AS
+UPDATE Cargos SET Codigo = @Codigo, Nombre = @Nombre WHERE Codigo = @Codigo;
+
+CREATE PROCEDURE storedListarCargos AS
+SELECT Codigo, Nombre FROM Cargos 

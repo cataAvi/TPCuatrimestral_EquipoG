@@ -102,8 +102,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AltaCargo.aspx" />
-    <Content Include="Cargos.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -123,11 +121,14 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="EnviarEmail.aspx" />
+    <Content Include="ErrorPagina.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FormularioCargos.aspx" />
     <Content Include="FormularioCliente.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Incidentes.aspx" />
     <Content Include="IniciarSesionaspx.aspx" />
+    <Content Include="ListadoCargos.aspx" />
     <Content Include="ListadoCliente.aspx" />
     <Content Include="Mensaje.aspx" />
     <Content Include="RazonSocial.aspx" />
@@ -174,21 +175,7 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AltaCargo.aspx.cs">
-      <DependentUpon>AltaCargo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AltaCargo.aspx.designer.cs">
-      <DependentUpon>AltaCargo.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Cargos.aspx.cs">
-      <DependentUpon>Cargos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cargos.aspx.designer.cs">
-      <DependentUpon>Cargos.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -210,6 +197,20 @@
     </Compile>
     <Compile Include="EnviarEmail.aspx.designer.cs">
       <DependentUpon>EnviarEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPagina.aspx.cs">
+      <DependentUpon>ErrorPagina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPagina.aspx.designer.cs">
+      <DependentUpon>ErrorPagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCargos.aspx.cs">
+      <DependentUpon>FormularioCargos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioCargos.aspx.designer.cs">
+      <DependentUpon>FormularioCargos.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormularioCliente.aspx.cs">
       <DependentUpon>FormularioCliente.aspx</DependentUpon>
@@ -234,6 +235,13 @@
     </Compile>
     <Compile Include="IniciarSesionaspx.aspx.designer.cs">
       <DependentUpon>IniciarSesionaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoCargos.aspx.cs">
+      <DependentUpon>ListadoCargos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoCargos.aspx.designer.cs">
+      <DependentUpon>ListadoCargos.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListadoCliente.aspx.cs">
       <DependentUpon>ListadoCliente.aspx</DependentUpon>

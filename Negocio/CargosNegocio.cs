@@ -19,7 +19,8 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("SELECT C.Codigo, C.Nombre FROM Cargos AS C");
+                datos.setearConsulta("SELECT C.Codigo, C.Nombre FROM Cargos AS C ");
+                
                 datos.ejecutarLectura();
 
 
@@ -88,6 +89,24 @@ namespace Negocio
             }
         }
 
+        public void modificarCargoSP(Cargos modificar)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearProcedimiento("storedModificarCargo");
+                datos.setearParametro("@Codigo", modificar.Codigo);
+                datos.setearParametro("@Nombre", modificar.Nombre);
+                
+                datos.cerrarConexion();
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
 
 

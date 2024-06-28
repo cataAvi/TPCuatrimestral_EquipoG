@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AltaCargo.aspx.cs" Inherits="TPCuatrimestral_EquipoG.AltaCargo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormularioCargos.aspx.cs" Inherits="TPCuatrimestral_EquipoG.FormularioCargos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
 
     <style>
         .body {
@@ -77,8 +76,10 @@
     <br />
     <hr />
 
-    <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" OnClick="btnAceptar_Click" Text="Grabar" />
+    <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" OnClick="btnAceptar_Click" Text="Grabar Nuevo Cargo" />
     <asp:Button ID="btnCancelar" runat="server" CssClass="btn btn-primary" Text="Cancelar" />
+
+
 
 
 

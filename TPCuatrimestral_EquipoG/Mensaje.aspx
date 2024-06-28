@@ -4,5 +4,7 @@
     <hr />
     <asp:LinkButton ID="LinkHome"  href="Default.aspx"  runat="server">Home</asp:LinkButton>
      <hr />
-    <asp:LinkButton ID="LinkFormulario"  href="ListadoCliente.aspx"  runat="server">Volver al listado</asp:LinkButton>
+    <asp:LinkButton ID="LinkFormulario"  href="ListadoCliente.aspx"  runat="server">Volver al listado de Clientes Activos</asp:LinkButton>
+    <hr />
+    <asp:LinkButton ID="ListadoCargos" href="ListadoCargos.aspx" runat="server">Volver al Listado de Cargos Activos</asp:LinkButton>
 </asp:Content>
