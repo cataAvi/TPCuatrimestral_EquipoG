@@ -47,3 +47,11 @@ UPDATE Cargos SET Codigo = @Codigo, Nombre = @Nombre WHERE Codigo = @Codigo;
 
 CREATE PROCEDURE storedListarCargos AS
 SELECT Codigo, Nombre FROM Cargos 
+
+CREATE PROCEDURE storedBajaCargo
+@Codigo int
+AS
+BEGIN
+    DELETE FROM Cargos WHERE Codigo = @Codigo;
+END;
+GO

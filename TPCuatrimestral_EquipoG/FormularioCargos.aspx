@@ -77,7 +77,20 @@
     <hr />
 
     <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" OnClick="btnAceptar_Click" Text="Grabar Nuevo Cargo" />
-    <asp:Button ID="btnCancelar" runat="server" CssClass="btn btn-primary" Text="Cancelar" />
+    
+    <%--ELIMINACION DE CARGO--%>
+    
+    <asp:Button ID="btnBorrar" runat="server" OnClick="btnBorrar_Click" CssClass="btn btn-danger" Text="Eliminar" />
+
+            <br />
+            <hr />
+
+            <%if (ConfirmaEliminacion)
+                { %>
+            <asp:CheckBox Text="Confirmar eliminación" ID="chbConfirmarEliminacion" runat="server" />
+            <asp:Button ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" runat="server" CssClass="btn btn-outline-danger" Text="Eliminar Cargo" />
+            <% } %>
+
 
 
 

@@ -65,14 +65,16 @@
                                 <li><a class="dropdown-item" href="ListadoCliente.aspx">Clientes</a></li>
 
                                 <%--REDIRIGIRME A LA PAGINA DE ALTACARGO.ASPX--%>
-                                <li><a class="dropdown-item" href="AltaCargo.aspx">Nuevo Cargo</a></li>
+                                <li><a class="dropdown-item" href="FormularioCargos.aspx">Nuevo Cargo</a></li>
+
 
                                 <!-- Opción para acceder a la página de Razones Sociales -->
-                                <li><a class="dropdown-item" href="Incidentes.aspx">Razones Sociales</a></li>
+                                <li><a class="dropdown-item" href="FormularioRazonesSociales.aspx">Razones Sociales</a></li>
+
                                 <!-- Opción para acceder a la página de Tipo -->
-                                <li><a class="dropdown-item" href="Incidentes.aspx">Tipo</a></li>
+                                <li><a class="dropdown-item" href="FormularioTipo.aspx">Tipo</a></li>
                                 <!-- Opción para acceder a la página de Subtipo -->
-                                <li><a class="dropdown-item" href="Incidentes.aspx">Subtipo</a></li>
+                                <li><a class="dropdown-item" href="FormularioSubTipo.aspx">Subtipo</a></li>
                             </ul>
                         </li>
 

@@ -108,6 +108,21 @@ namespace Negocio
             }
         }
 
+        public void eliminarCargoSP(int codigo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearProcedimiento("storedBajaCargo");
+                datos.setearParametro("@Codigo", codigo);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { datos.cerrarConexion(); }
+        }
 
 
 

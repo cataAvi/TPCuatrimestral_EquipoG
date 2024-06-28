@@ -60,12 +60,30 @@ namespace TPCuatrimestral_EquipoG
         protected global::System.Web.UI.WebControls.Button btnAceptar;
 
         /// <summary>
-        /// Control btnCancelar.
+        /// Control btnBorrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
+        protected global::System.Web.UI.WebControls.Button btnBorrar;
+
+        /// <summary>
+        /// Control chbConfirmarEliminacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chbConfirmarEliminacion;
+
+        /// <summary>
+        /// Control btnConfirmarEliminacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmarEliminacion;
     }
 }
