@@ -77,10 +77,20 @@
     <hr />
 
     <asp:Button ID="btnAceptar" runat="server" CssClass="btn btn-primary" OnClick="btnAceptar_Click" Text="Grabar Nuevo Cargo" />
-    
+
     <%--ELIMINACION DE CARGO--%>
     
-    <asp:Button ID="btnBorrar" runat="server" OnClick="btnBorrar_Click" CssClass="btn btn-danger" Text="Eliminar" />
+    
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+
+
+
+
+
+
+            <asp:Button ID="btnBorrar" runat="server" OnClick="btnBorrar_Click" CssClass="btn btn-danger" Text="Eliminar" />
 
             <br />
             <hr />
@@ -90,19 +100,8 @@
             <asp:CheckBox Text="Confirmar eliminación" ID="chbConfirmarEliminacion" runat="server" />
             <asp:Button ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" runat="server" CssClass="btn btn-outline-danger" Text="Eliminar Cargo" />
             <% } %>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </ContentTemplate>
+    </asp:UpdatePanel>
 
 
 

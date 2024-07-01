@@ -94,15 +94,9 @@ namespace TPCuatrimestral_EquipoG
                 if (chbConfirmarEliminacion.Checked)
                 {
                     CargosNegocio negocio = new CargosNegocio();
-                    negocio.eliminarCargoSP(int.Parse(txbCodigo.Text));
-                    Response.Redirect("ListadoCargos.aspx");
+                    negocio.eliminarCargo(int.Parse(txbCodigo.Text));
+                    Response.Redirect("ListadoCargos.aspx",false);
                 }
-
-
-
-
-
-
 
             }
             catch (Exception ex)

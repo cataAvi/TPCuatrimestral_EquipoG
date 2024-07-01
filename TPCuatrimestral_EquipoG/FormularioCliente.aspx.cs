@@ -94,7 +94,7 @@ namespace TPCuatrimestral_EquipoG
                 {
                     ClienteNegocio negocio = new ClienteNegocio();
                     negocio.eliminarCliente(int.Parse(txbCodigo.Text));
-                    Response.Redirect("ListadoCliente.aspx");
+                    Response.Redirect("ListadoCliente.aspx",false );
                 }
                 
             }
