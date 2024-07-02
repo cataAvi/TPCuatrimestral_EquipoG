@@ -125,12 +125,14 @@
     <Content Include="favicon.ico" />
     <Content Include="FormularioCargos.aspx" />
     <Content Include="FormularioCliente.aspx" />
+    <Content Include="FormularioIncidentes.aspx" />
     <Content Include="FormularioRazonSocial.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Incidentes.aspx" />
     <Content Include="IniciarSesionaspx.aspx" />
     <Content Include="ListadoCargos.aspx" />
     <Content Include="ListadoCliente.aspx" />
+    <Content Include="ListadoIncidentes.aspx" />
     <Content Include="ListadoRazonSocial.aspx" />
     <Content Include="Mensaje.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -219,6 +221,13 @@
     <Compile Include="FormularioCliente.aspx.designer.cs">
       <DependentUpon>FormularioCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormularioIncidentes.aspx.cs">
+      <DependentUpon>FormularioIncidentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioIncidentes.aspx.designer.cs">
+      <DependentUpon>FormularioIncidentes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormularioRazonSocial.aspx.cs">
       <DependentUpon>FormularioRazonSocial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -256,6 +265,13 @@
     </Compile>
     <Compile Include="ListadoCliente.aspx.designer.cs">
       <DependentUpon>ListadoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoIncidentes.aspx.cs">
+      <DependentUpon>ListadoIncidentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoIncidentes.aspx.designer.cs">
+      <DependentUpon>ListadoIncidentes.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListadoRazonSocial.aspx.cs">
       <DependentUpon>ListadoRazonSocial.aspx</DependentUpon>
