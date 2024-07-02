@@ -69,7 +69,7 @@
 
 
                                 <!-- Opción para acceder a la página de Razones Sociales -->
-                                <li><a class="dropdown-item" href="FormularioRazonesSociales.aspx">Razones Sociales</a></li>
+                                <li><a class="dropdown-item" href="FormularioRazonSocial.aspx">Razones Sociales</a></li>
 
                                 <!-- Opción para acceder a la página de Tipo -->
                                 <li><a class="dropdown-item" href="FormularioTipo.aspx">Tipo</a></li>

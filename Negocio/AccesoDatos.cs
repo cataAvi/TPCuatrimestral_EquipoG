@@ -44,7 +44,7 @@ namespace Negocio
                 throw ex;
             }
         }
-
+        //Propósito: Se utiliza para ejecutar comandos SQL que no devuelven resultados, como INSERT, UPDATE o DELETE.
         public void ejecutarAccion()
         {
             comando.Connection = conexion;

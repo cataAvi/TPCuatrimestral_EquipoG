@@ -125,13 +125,14 @@
     <Content Include="favicon.ico" />
     <Content Include="FormularioCargos.aspx" />
     <Content Include="FormularioCliente.aspx" />
+    <Content Include="FormularioRazonSocial.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Incidentes.aspx" />
     <Content Include="IniciarSesionaspx.aspx" />
     <Content Include="ListadoCargos.aspx" />
     <Content Include="ListadoCliente.aspx" />
+    <Content Include="ListadoRazonSocial.aspx" />
     <Content Include="Mensaje.aspx" />
-    <Content Include="RazonSocial.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -166,7 +167,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="SubTipo.aspx" />
-    <Content Include="Tareas.aspx" />
     <Content Include="Tipo.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -219,6 +219,13 @@
     <Compile Include="FormularioCliente.aspx.designer.cs">
       <DependentUpon>FormularioCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormularioRazonSocial.aspx.cs">
+      <DependentUpon>FormularioRazonSocial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioRazonSocial.aspx.designer.cs">
+      <DependentUpon>FormularioRazonSocial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -250,6 +257,13 @@
     <Compile Include="ListadoCliente.aspx.designer.cs">
       <DependentUpon>ListadoCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListadoRazonSocial.aspx.cs">
+      <DependentUpon>ListadoRazonSocial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoRazonSocial.aspx.designer.cs">
+      <DependentUpon>ListadoRazonSocial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mensaje.aspx.cs">
       <DependentUpon>Mensaje.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -258,13 +272,6 @@
       <DependentUpon>Mensaje.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RazonSocial.aspx.cs">
-      <DependentUpon>RazonSocial.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RazonSocial.aspx.designer.cs">
-      <DependentUpon>RazonSocial.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -285,13 +292,6 @@
     </Compile>
     <Compile Include="SubTipo.aspx.designer.cs">
       <DependentUpon>SubTipo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Tareas.aspx.cs">
-      <DependentUpon>Tareas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Tareas.aspx.designer.cs">
-      <DependentUpon>Tareas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tipo.aspx.cs">
       <DependentUpon>Tipo.aspx</DependentUpon>

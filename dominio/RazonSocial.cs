@@ -11,7 +11,7 @@ namespace dominio
         public string Nombre { get; set; }
         public string CUIT { get; set; }
 
-        public int IDCliente { get; set; }
+        public int CodigoCliente { get; set; }
 
 
 

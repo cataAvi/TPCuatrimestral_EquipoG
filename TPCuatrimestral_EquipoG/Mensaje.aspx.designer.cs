@@ -40,5 +40,14 @@ namespace TPCuatrimestral_EquipoG
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton ListadoCargos;
+
+        /// <summary>
+        /// Control ListadoRazonSocial.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ListadoRazonSocial;
     }
 }

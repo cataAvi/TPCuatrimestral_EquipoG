@@ -55,3 +55,44 @@ BEGIN
     DELETE FROM Cargos WHERE Codigo = @Codigo;
 END;
 GO
+-----------------------------------------------------------------------------------------------
+Razones Sociales.
+CREATE PROCEDURE storedAltaRazonSocial
+    @Codigo INT,
+    @Nombre VARCHAR(50),
+    @CUIT VARCHAR(11),
+    @Cliente INT
+ AS
+BEGIN
+    INSERT INTO Razones_Sociales (Codigo, Nombre, CUIT, Cliente)
+    VALUES (@Codigo, @Nombre, @CUIT, @Cliente)
+END
+
+
+
+CREATE PROCEDURE storedBajaRazonSocial
+@Codigo INT
+AS
+BEGIN
+    DELETE FROM Razones_Sociales
+    WHERE Codigo = @Codigo
+END
+
+
+
+CREATE PROCEDURE storedModificarRazonSocial
+    @Codigo INT,
+    @Nombre VARCHAR(50),
+    @CUIT VARCHAR(11),
+    @Cliente INT
+AS
+BEGIN
+    UPDATE Razones_Sociales
+    SET Nombre = @Nombre,
+        CUIT = @CUIT,
+        Cliente = @Cliente
+    WHERE Codigo = @Codigo
+END
+
+CREATE PROCEDURE listarRazonSocialSP
+---------------------------------------------------------------------------------------------------

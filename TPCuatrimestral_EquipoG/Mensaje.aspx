@@ -7,4 +7,8 @@
     <asp:LinkButton ID="LinkFormulario"  href="ListadoCliente.aspx"  runat="server">Volver al listado de Clientes Activos</asp:LinkButton>
     <hr />
     <asp:LinkButton ID="ListadoCargos" href="ListadoCargos.aspx" runat="server">Volver al Listado de Cargos Activos</asp:LinkButton>
+     <hr />
+    <asp:LinkButton ID="ListadoRazonSocial" href="ListadoRazonSocial.aspx" runat="server">Volver al Listado de Razones Sociales Activas</asp:LinkButton>
+
+
 </asp:Content>
