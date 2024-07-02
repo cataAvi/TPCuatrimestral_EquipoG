@@ -96,3 +96,68 @@ END
 
 CREATE PROCEDURE listarRazonSocialSP
 ---------------------------------------------------------------------------------------------------
+<<<<<<<<< INCIDENTES >>>>>>>>>>>>>
+
+CREATE PROCEDURE storedAltaIncidente
+    @Numero INT,
+    @Usuario_Registro int,
+    @Fecha_Registro date,
+    @Cliente int,
+	@Razon_Social int,
+	@Tipo int,
+	@SubTipo int,
+	@Detalle VARCHAR(1500)
+ AS
+BEGIN
+    INSERT INTO Incidentes(Numero,Usuario_Registro,Fecha_Registro,Cliente,Razon_Social,Tipo,Subtipo,Detalle)
+    VALUES (@Numero, @Usuario_Registro, @Fecha_Registro, @Cliente,@Razon_Social,@Tipo,@SubTipo,@Detalle)
+END
+
+
+CREATE PROCEDURE storedBajaIncidente
+@Numero INT
+AS
+BEGIN
+    DELETE FROM Incidentes
+    WHERE Numero = @Numero
+END
+
+CREATE PROCEDURE storedModificarIncidente
+    @Numero INT,
+    @Usuario_Registro int,
+    @Fecha_Registro date,
+    @Cliente int,
+	@Razon_Social int,
+	@Tipo int,
+	@SubTipo int,
+	@Detalle VARCHAR(1500)
+AS
+BEGIN
+    UPDATE Incidentes
+    SET Numero = @Numero,
+        Usuario_Registro = @Usuario_Registro,
+        Fecha_Registro= @Fecha_Registro,
+		Cliente = @Cliente,
+		Razon_Social=@Razon_Social,
+		Tipo = @Tipo,
+		Subtipo = @SubTipo,
+		Detalle = @Detalle
+	WHERE Numero = @Numero
+END
+
+
+CREATE PROCEDURE storedListarIncidentes AS
+SELECT Numero, Usuario_Registro,Fecha_Registro,Cliente,Razon_Social,Tipo,Subtipo,Detalle FROM Incidentes
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

@@ -13,12 +13,14 @@ namespace TPCuatrimestral_EquipoG
 {
     public partial class FormularioRazonSocial : System.Web.UI.Page
     {
-        List<RazonSocial> listaRazonesSociales = new List<RazonSocial>();
+        
+        List<RazonSocial> listaRazonesSociales = new List<RazonSocial>(); //lista para almacenar razones sociales.
+
         public bool ConfirmaEliminacion;
 
         public void Page_Load(object sender, EventArgs e)
         {
-            ConfirmaEliminacion = false;
+            ConfirmaEliminacion = false; 
 
             if (!IsPostBack)
             {
@@ -26,13 +28,15 @@ namespace TPCuatrimestral_EquipoG
 
                 // Verificar si hay un código dentro de la URL para modo de edición
                 string codigo = Request.QueryString["Codigo"];
-                if (!string.IsNullOrEmpty(codigo))
+                if (!string.IsNullOrEmpty(codigo)) //verifica si codigo no es nulo (null) y no está vacío.
                 {
                     int codigoURL;
-                    if (int.TryParse(codigo, out codigoURL))
-                    {
+
+                    if (int.TryParse(codigo, out codigoURL)) //intenta convertir la cadena codigo a un entero.
+                    {                                        //TryParse devuelve true si la conversión tiene éxito y false si falla.
                         CargarDatosEdicion(codigoURL);
                     }
+                                                            
                     
                 }
               
@@ -54,7 +58,9 @@ namespace TPCuatrimestral_EquipoG
         public void CargarDatosEdicion(int codigoURL)
         {
             RazonSocialNegocio negocio = new RazonSocialNegocio();
-            listaRazonesSociales = negocio.listarSP();
+            
+            listaRazonesSociales = negocio.listarSP(); //Listamos RZ.
+
             RazonSocial seleccionado = listaRazonesSociales.Find(x => x.Codigo == codigoURL);
 
             if (seleccionado != null)
@@ -64,8 +70,11 @@ namespace TPCuatrimestral_EquipoG
                 txtNombre.Text = seleccionado.Nombre;
                 txtCUIT.Text = seleccionado.CUIT;
 
-                // Verificar si el cliente seleccionado existe en el DropDownList y seleccionarlo
-                ListItem item = ddlClientes.Items.FindByValue(seleccionado.CodigoCliente.ToString());
+                // Verificar si el cliente seleccionado existe en el DropDownList y seleccionarlo.
+                ListItem item = ddlClientes.Items.FindByValue(seleccionado.CodigoCliente.ToString()); //busca el ítem con el valor correspondiente.
+                                                                                                     //FindByValue para buscar en la colección de ítems (ListItem)
+                                                                                                    //dentro del DropDownList.
+
                 if (item != null)
                 {
                     ddlClientes.SelectedValue = item.Value;
